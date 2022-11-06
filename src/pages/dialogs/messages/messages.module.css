@@ -1,0 +1,18 @@
+.wrap {
+    display: grid;
+    grid-template-rows: 1fr 20fr 2fr;
+    color: var(--color1);
+    max-height: 91vh;
+
+}
+
+.messages {
+    color: var(--color1);
+    background: var(--bg-color);
+    padding: 1em 1.5em;
+    overflow-y: scroll;
+}
+
+.messages {
+    color: var(--color1);
+}

@@ -1,0 +1,4 @@
+.wrap {
+    background: var(--main-interface-color);
+    border-radius: 0 1em 0 0;
+}

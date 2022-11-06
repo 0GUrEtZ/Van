@@ -1,0 +1,29 @@
+.nav {
+    grid-area: h;
+    background: var(--main-interface-color);
+    display: grid;
+    grid-template-columns: repeat(4, minmax(auto, 1fr));
+}
+
+.nav a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.button {
+    font-size: 1.2em;
+    text-decoration: none;
+    text-align: center;
+    background: var(--main-interface-color);
+    padding: 0.7em 0.5em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.button:hover {
+    background: var(--accent-color);
+    color: #ffffff;
+}
+
+.active div {
+    background: var(--accent-color);
+}

@@ -1,0 +1,11 @@
+.wrapper {
+    grid-area: s;
+    display: grid;
+    grid-template-columns: 1fr 30fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: ". p .";
+}
+
+.elements {
+    grid-area: t;
+}

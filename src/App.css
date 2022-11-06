@@ -1,0 +1,36 @@
+html {
+    --main-interface-color: #2b2c28;
+    --accent-color: #339989;
+    --bg-color: #131515;
+    --color1: #fffafb;
+    --color2: #7de2d1;
+}
+
+.app-wrapper {
+    min-height: 100vh;
+    background: var(--bg-color);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(0, auto) 1fr minmax(0, auto);
+    grid-template-areas:
+        "h"
+        "s"
+        "f";
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--main-interface-color);
+}
+
+::-webkit-scrollbar {
+    width: 0.4em;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background: var(--accent-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color2);
+}
