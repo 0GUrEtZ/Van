@@ -1,8 +1,8 @@
 import React from "react";
 import d from "./dialogs.module.css"
 import { TabTitle } from '../../utils/tab-title';
-import DialogPreview from "./chats/chats";
-import c from "./chats/chats.module.css";
+import DialogPreview from "./dialogpreview/dialogpreview";
+import c from "./dialogpreview/dialogpreview.module.css";
 import Messages from "./messages/messages";
 
 const Dialogs = (props) => {
@@ -17,7 +17,7 @@ const Dialogs = (props) => {
                 <DialogPreview name="Billy Herrington" id="4" message="Hi, how are you? I'm making human sacrifices. Let's meet at 5pm!" />
                 <DialogPreview name="Van Darkholme" id="5" message="Hi, how are you? I'm making human sacrifices. Let's meet at 5pm!" />
             </div>
-            <Messages name="Ricardo Milos" id="1" />
+            <Messages />
         </div>
     )
 }

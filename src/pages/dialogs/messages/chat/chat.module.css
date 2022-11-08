@@ -1,3 +1,5 @@
-.message {
-    background: var(--accent-color);
+.wrapper {
+    background: red;
+    width: 2em;
+    height: 2em;
 }
