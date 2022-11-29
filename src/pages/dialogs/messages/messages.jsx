@@ -8,9 +8,9 @@ const Messages = (props) => {
         <Routes>
             <Route path={route} element={<Chat name="Ricardo Milos" id="1" />} />
             <Route path={route} element={<Chat name="Dominic Toretto" id="2" />} />
-            <Route path={route} element={<Chat />} />
-            <Route path={route} element={<Chat />} />
-            <Route path={route} element={<Chat />} />
+            <Route path={route} element={<Chat name="Tim Cock" id="3" />} />
+            <Route path={route} element={<Chat name="Billy Herrington" id="4" />} />
+            <Route path={route} element={<Chat name="Van Darkholme" id="5" />} />
         </Routes>
     )
 }

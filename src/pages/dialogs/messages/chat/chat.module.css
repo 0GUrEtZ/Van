@@ -1,5 +1,5 @@
 .wrapper {
-    background: red;
-    width: 2em;
-    height: 2em;
+    background: var(--accent-color);
+    display: grid;
+    grid-template-rows: 1fr 20fr 1fr;
 }
