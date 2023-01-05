@@ -10,7 +10,7 @@ const Header = () => {
       <NavLink to='/' className={setActive} end><div className={h.button}>Summary</div></NavLink>
       <NavLink to='/posts' className={setActive}><div className={h.button}>Posts</div></NavLink>
       <NavLink to='/dialogs' className={setActive}><div className={h.button}>Dialogs</div></NavLink>
-      <NavLink to='/hz' className={setActive} end><div className={h.button}>ХЗ</div></NavLink>
+      <NavLink to='/counter' className={setActive} end><div className={h.button}>Counter</div></NavLink>
     </div>
   );
 }
