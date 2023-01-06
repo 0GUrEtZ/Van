@@ -9,8 +9,22 @@
     max-height: 83vh;
     border: 4px solid var(--main-interface-color);
     overflow-x: hidden;
+    color: var(--color1);
 }
 
 .list {
     overflow-y: scroll;
+}
+
+.input {
+    background-color: var(--main-interface-color);
+    border: 0;
+    margin: 0.5em;
+    border-radius: 0.5em;
+}
+
+.interaction {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 1fr;
 }
