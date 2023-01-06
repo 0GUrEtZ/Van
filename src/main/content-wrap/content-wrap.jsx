@@ -4,7 +4,7 @@ import Posts from '../../pages/posts/posts';
 import Dialogs from '../../pages/dialogs/dialogs';
 import Summary from '../../pages/summary/summary'
 import { Route, Routes } from 'react-router-dom';
-import Counter from 'pages/counter/Counter';
+import ToDo from 'pages/ToDo/ToDo';
 
 const Content = (props) => {
 
@@ -14,7 +14,7 @@ const Content = (props) => {
         <Route path='/' element={<Summary />} />
         <Route path='dialogs/*' element={<Dialogs />} />
         <Route path='posts' element={<Posts />} />
-        <Route path='counter' element={<Counter />} />
+        <Route path='counter' element={<ToDo />} />
       </Routes>
     </div>
   );
