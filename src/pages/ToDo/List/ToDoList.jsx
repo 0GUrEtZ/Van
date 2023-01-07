@@ -4,6 +4,12 @@ import delLogo from "../../../images/delete-icon-18-128.png"
 import editLogo from '../../../images/edit-128.png'
 
 const ToDoList = ({ todo, setTodo }) => {
+    function deleteToDo() {
+        console.log('delete')
+    }
+    function editToDo() {
+        console.log('edit')
+    }
     return (
         <div className={t.list}>
             {
@@ -14,10 +20,10 @@ const ToDoList = ({ todo, setTodo }) => {
                         </div>
                         <div>
                             <input type="checkbox" className={t.checkbox} />
-                            <button className={t.taskButton}>
+                            <button onClick={() => deleteToDo()} className={t.taskButton}>
                                 <img src={delLogo} />
                             </button>
-                            <button className={t.taskButton}>
+                            <button onClick={() => editToDo()} className={t.taskButton}>
                                 <img src={editLogo} />
                             </button>
                         </div>
