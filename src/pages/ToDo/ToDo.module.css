@@ -1,30 +1,85 @@
 .wrapper {
     grid-area: p;
-    font-family: Arial, Helvetica, sans-serif;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 5fr 1fr;
-    margin: 0.5em 0;
+}
+
+.todo {
+    font-family: Arial, Helvetica, sans-serif;
     border-radius: 1.25em;
-    max-height: 83vh;
     border: 4px solid var(--main-interface-color);
     overflow-x: hidden;
     color: var(--color1);
+    width: min-content;
+    height: min-content;
+    padding: 0;
+    margin: 0.5em;
 }
 
 .list {
-    overflow-y: scroll;
+    height: 30em;
+    overflow-y: auto;
+    background: var(--bg-color);
 }
 
 .input {
-    background-color: var(--main-interface-color);
+    vertical-align: top;
+    background-color: var(--bg-color);
     border: 0;
-    margin: 0.5em;
-    border-radius: 0.5em;
+    outline: none;
+    color: var(--color1);
+    resize: none;
+    width: 18em;
+    padding: 0.5em;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .interaction {
+    border-top: 4px solid;
+    border-color: var(--main-interface-color);
     display: grid;
     grid-template-columns: 4fr 1fr;
     grid-template-rows: 1fr;
+    background: var(--main-interface-color);
+}
+
+.button {
+    background: var(--accent-color);
+    padding: 0.7em 1.2em;
+    margin: 0 0 0 4px;
+    border: 0;
+    color: var(--color1);
+    font-size: 1.1em;
+}
+
+.button:hover {
+    background: #297a6e;
+}
+
+.task {
+    background: var(--main-interface-color);
+    margin: 4px 0;
+    padding: 0.5em;
+    margin: 2px 1px 2px 1px;
+    display: flex;
+}
+
+.task:hover {
+    background: var(--accent-color);
+}
+
+.taskButton {
+    background: transparent;
+    border: 0;
+    margin: 0.2em;
+    width: min-content;
+    height: min-content;
+    padding: 0;
+}
+
+.taskButton:hover {
+    background: rgba(0, 0, 0, 0.200);
+}
+
+.taskButton img {
+    width: 1.1em;
 }

@@ -14,7 +14,7 @@ const Content = (props) => {
         <Route path='/' element={<Summary />} />
         <Route path='dialogs/*' element={<Dialogs />} />
         <Route path='posts' element={<Posts />} />
-        <Route path='counter' element={<ToDo />} />
+        <Route path='todo' element={<ToDo />} />
       </Routes>
     </div>
   );
