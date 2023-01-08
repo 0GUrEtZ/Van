@@ -5,10 +5,8 @@ import editLogo from '../../../images/edit-128.png'
 import completeLogo from '../../../images/arrow-204-128.png'
 
 const ToDoList = ({ todo, setTodo }) => {
-
     const [edit, setEdit] = useState('')
     const [value, setValue] = useState('')
-
     function saveToDo(id) {
         setEdit('')
         let newToDo = [...todo].map(item => {
@@ -19,7 +17,6 @@ const ToDoList = ({ todo, setTodo }) => {
         })
         setTodo(newToDo)
     }
-
     function deleteToDo(id) {
         let newToDo = [...todo].filter(item => item.id != id)
         setTodo(newToDo)
@@ -70,7 +67,6 @@ const ToDoList = ({ todo, setTodo }) => {
                                     </div>
                                 </div>
                         }
-
                     </div>
                 ))
             }

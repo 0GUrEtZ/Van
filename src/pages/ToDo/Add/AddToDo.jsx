@@ -16,6 +16,7 @@ const AddToDo = ({ setTodo, todo }) => {
         )
         setValue('')
     }
+
     return (
         <div className={t.interaction}>
             <textarea placeholder='To Do' value={value} onChange={(e) => setValue(e.target.value)} className={t.input}></textarea>
