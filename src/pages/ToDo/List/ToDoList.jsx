@@ -10,7 +10,7 @@ const ToDoList = ({ todo, setTodo }) => {
     function saveToDo(id) {
         setEdit('')
         let newToDo = [...todo].map(item => {
-            if (item.id == id) {
+            if (item.id === id) {
                 item.title = value
             }
             return item
@@ -18,7 +18,7 @@ const ToDoList = ({ todo, setTodo }) => {
         setTodo(newToDo)
     }
     function deleteToDo(id) {
-        let newToDo = [...todo].filter(item => item.id != id)
+        let newToDo = [...todo].filter(item => item.id !== id)
         setTodo(newToDo)
     }
     function editToDo(id, title) {
@@ -27,7 +27,7 @@ const ToDoList = ({ todo, setTodo }) => {
     }
     function completeToDo(id) {
         let newToDo = [...todo].filter(item => {
-            if (item.id == id) {
+            if (item.id === id) {
                 item.status = !item.status
             }
             return item
@@ -41,7 +41,7 @@ const ToDoList = ({ todo, setTodo }) => {
                 todo.map(item => (
                     <div>
                         {
-                            edit == item.id ?
+                            edit === item.id ?
                                 <div className={t.activeTask}>
                                     <textarea value={value} onChange={(e) => setValue(e.target.value)} className={t.input}></textarea>
                                     <div className={t.btnContainer}>
