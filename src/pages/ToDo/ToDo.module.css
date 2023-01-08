@@ -83,3 +83,38 @@
 .taskButton img {
     width: 1.1em;
 }
+
+.btnContainer {
+    margin-left: auto;
+    margin-right: 0;
+    max-height: 2.3em;
+}
+
+.task:hover textarea {
+    background: var(--color1);
+    color: var(--bg-color);
+}
+
+.activeTask {
+    background: var(--accent-color);
+    margin: 4px 0;
+    padding: 0.5em;
+    margin: 2px 1px 2px 1px;
+    display: flex;
+}
+
+.activeTask textarea {
+    background: var(--color1);
+    color: var(--bg-color);
+}
+
+.text {
+    word-wrap: break-word;
+    width: 18em;
+}
+
+.completeText {
+    word-wrap: break-word;
+    width: 18em;
+    text-decoration: line-through;
+}
