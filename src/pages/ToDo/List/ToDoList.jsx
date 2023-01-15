@@ -3,6 +3,8 @@ import t from "../ToDo.module.css";
 import delLogo from "../../../images/delete-icon-18-128.png"
 import editLogo from '../../../images/edit-128.png'
 import completeLogo from '../../../images/arrow-204-128.png'
+import saveLogo from '../../../images/save-as-128.png'
+import crossLogo from '../../../images/x-mark-128.png'
 
 const ToDoList = ({ todo, setTodo }) => {
     const [edit, setEdit] = useState('')
@@ -17,24 +19,20 @@ const ToDoList = ({ todo, setTodo }) => {
         })
         setTodo(newToDo)
     }
-    function deleteToDo(id) {
-        let newToDo = [...todo].filter(item => item.id !== id)
-        setTodo(newToDo)
+    const deleteToDo = (id) => {
+
+        setTodo(todo.filter(item => item.id !== id))
     }
-    function editToDo(id, title) {
+    const editToDo = (id, title) => {
         setEdit(id)
         setValue(title)
     }
-    function completeToDo(id) {
-        let newToDo = [...todo].filter(item => {
-            if (item.id === id) {
-                item.status = !item.status
-            }
-            return item
-        })
-        setTodo(newToDo)
-        console.log(todo)
+    const completeToDo = (id) => {
+        // console.log(todo.filter(item => item.id === id ? item.status : ))
+        // setTodo(todo.filter(item => item.id === id ? { ...item, status: !item.status } : item.status))
+        console.log(todo.filter()) 
     }
+    console.log(todo)
     return (
         <div className={t.list}>
             {
@@ -46,7 +44,7 @@ const ToDoList = ({ todo, setTodo }) => {
                                     <textarea value={value} onChange={(e) => setValue(e.target.value)} className={t.input}></textarea>
                                     <div className={t.btnContainer}>
                                         <button onClick={() => saveToDo(item.id)} className={t.taskButton}>
-                                            <img src={completeLogo} />
+                                            <img src={saveLogo} alt='dsg' />
                                         </button>
                                     </div>
                                 </div> :
@@ -56,13 +54,13 @@ const ToDoList = ({ todo, setTodo }) => {
                                     </div>
                                     <div className={t.btnContainer}>
                                         <button onClick={() => completeToDo(item.id)} className={t.taskButton}>
-                                            <img src={completeLogo} />
+                                            <img src={item.status ? completeLogo : crossLogo} alt='asdfadg' />
                                         </button>
                                         <button onClick={() => deleteToDo(item.id)} className={t.taskButton}>
-                                            <img src={delLogo} />
+                                            <img src={delLogo} alt='sdagdag' />
                                         </button>
                                         <button onClick={() => editToDo(item.id, item.title)} className={t.taskButton}>
-                                            <img src={editLogo} />
+                                            <img src={editLogo} alt='dagda' />
                                         </button>
                                     </div>
                                 </div>
