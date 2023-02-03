@@ -4,6 +4,7 @@ html {
     --bg-color: #131515;
     --color1: #fffafb;
     --color2: #7de2d1;
+    max-width: 100vw;
 }
 
 .app-wrapper {

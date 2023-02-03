@@ -9,15 +9,8 @@ const Products = ({ product, setProduct }) => {
 
     return (
         <div>
-            <Link to='add' className={setActive} end><div className={s.button}>Add</div></Link>
-            <Routes>
-                <Route path='/' element={<ProductCard product={product} setProduct={setProduct} />} />
-                {
-                    product.map(item => (
-                        <Route path={`/shop/${item.id}`} element={<ProductPage product={product} setProduct={setProduct} />} />
-                    ))
-                }
-            </Routes>
+            <Link to='add' end className={s.button}>Add</Link>
+            <ProductCard product={product} setProduct={setProduct} />
         </div>
     );
 }
