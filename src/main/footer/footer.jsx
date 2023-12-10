@@ -11,6 +11,7 @@ const Ftr = () => {
         <a href='https://t.me/ogurtsovilya'><img src={tglogo} /></a>
         <a href='https://vk.com/ogurtsov_ilya'><img src={vklogo} /></a>
         <a href='https://github.com/0GUrEtZ/Van'><img src={gitlogo} /></a>
+        
       </div>
       <span>
         Создатель: Илья Огурцов
